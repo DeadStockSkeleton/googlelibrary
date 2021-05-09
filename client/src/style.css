@@ -1,0 +1,15 @@
+*{
+    font-family: 'Questrial', sans-serif;
+}
+
+.search-input{
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.search-input:focus{
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
