@@ -2,7 +2,7 @@
 function Container() {
     return (
         <>
-        <div className="container mx-auto px-5 pe-5">
+        <div className="container border-start border-end mx-auto px-5 pe-5">
                 
         </div>
       </>

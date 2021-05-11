@@ -1,7 +1,9 @@
-*{
+.nav-text{
     font-family: 'Questrial', sans-serif;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .search-input{
     background-color: rgba(0, 0, 0, 0.363);
 }
@@ -9,7 +11,6 @@
 .search-input:focus{
     background-color: rgba(0, 0, 0, 0.500);
 }
-
-.navbar{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+.card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
