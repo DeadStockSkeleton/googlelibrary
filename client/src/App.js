@@ -16,18 +16,19 @@ function App(){
   }
 
   function submit(){
-    API.seachBook(search).then((data) =>{
+    API.searchBook(search).then((data) =>{
       return data.json()
     }).then((res)=>{
       setBooks(res.items)
-      console.log(books);
+    }).catch((err)=>{
+      console.log(err);
     })
   }
     return (
         <><Router>
           <Navbar submitBtn={submit} handleSearch={handleSearch}/>
           <Route exact path='/'>
-            <Home search={books}/>
+            <Home query={search} search={books}/>
           </Route>
           <Route exact path='/bookmarks' component={Bookmarks}/>
           </Router>
