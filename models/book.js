@@ -7,6 +7,7 @@ const googlebooks = new Schema({
   desc: String,
   img: String,
   url: String,
+
 });
 
 const Book = mongoose.model("Book", googlebooks);
