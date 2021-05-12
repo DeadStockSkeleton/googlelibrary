@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-function BookmarkBtn() {
+function BookmarkBtn(props) {
     return (
         <>
-        <button className="btn bookmarkBtn text-light bg-primary" to='/bookmarks'>
-        <i class="far fa-bookmark"></i>
-        </button>
+        <Link onClick={()=>{
+          {props.getBkm()}
+        }} className="btn bookmarkBtn border-rounded text-light bg-primary" to='/bookmarks'>
+        <i class="fas fa-bookmark"></i> Bookmarks
+        </Link>
       </>
     );
   }

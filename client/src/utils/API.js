@@ -13,7 +13,20 @@ export default {
             body: data,
       headers: { 'Content-Type': 'application/json' },
         }).then((data)=>{
-            console.log(data)
+            return data.json()
+        }).then((res) => {
+            return res;
         })
+    },
+    getBooks: function(){
+        return fetch('/bookmarks', {
+            method: 'GET'
+        })
+    },
+
+    removeBook: function(id){
+        return fetch(`/${id}`, {
+            method: 'DELETE'
+        }).then((data) => {window.location.reload()})
     }
 };
