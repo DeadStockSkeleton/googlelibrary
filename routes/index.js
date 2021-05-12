@@ -2,7 +2,7 @@ const path = require("path");
 const router = require("express").Router();
 
 router.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname,  "build", "index.html"));
+  res.sendFile(path.resolve(__dirname,  "public", "index.html"));
 });
   const book = require('../models/book');
 router.post('/',async (req, res) => {
