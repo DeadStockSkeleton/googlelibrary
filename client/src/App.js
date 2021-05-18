@@ -31,11 +31,11 @@ function App(){
     })
   }
 function getBkm(){
-  API.getBooks().then((data) =>{
-      return data.json()
-    }).then((res)=>{
-      setBookmarks(res)
-    }).catch((err)=>{
+  API.getBooks().then(data => data.json())
+  .then((res)=>{setBookmarks(res)
+    console.log(bookmarks)})
+      
+    .catch((err)=>{
       console.log(err);
     })
 }
